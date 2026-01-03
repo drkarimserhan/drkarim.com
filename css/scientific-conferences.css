@@ -1,0 +1,168 @@
+/* Scientific Conferences Page - Specific Styles */
+
+/* Conferences Section */
+.conferences-section {
+    padding: 80px 0;
+    background: var(--lighter-bg);
+}
+
+.conferences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Conference Card - Matching Academic Card Style */
+.conference-card {
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.conference-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: #a78bfa;
+}
+
+/* Pink Theme for Breast Cancer Card */
+.conference-card-pink {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+}
+
+.conference-card-pink:hover {
+    border-color: #f48fb1;
+}
+
+.conference-card-pink .conference-icon {
+    background: linear-gradient(135deg, #d81b60, #f48fb1);
+}
+
+/* Conference Icon */
+.conference-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.conference-title {
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.conference-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.conference-link-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.conference-card:hover .conference-link-text {
+    gap: 1rem;
+    color: var(--primary-dark);
+}
+
+/* Optional elements that can be hidden or removed */
+.conference-badge {
+    display: none;
+}
+
+.conference-image {
+    display: none;
+}
+
+.conference-footer {
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .conferences-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 968px) {
+    .conferences-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .conferences-section {
+        padding: 60px 0;
+    }
+
+    .conferences-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .conference-card {
+        padding: 1.75rem;
+    }
+
+    .conference-title {
+        font-size: 1.2rem;
+    }
+
+    .conference-description {
+        font-size: 0.9rem;
+    }
+
+    .conference-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .conference-card {
+        padding: 1.5rem;
+    }
+
+    .conference-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+
+    .conference-title {
+        font-size: 1.1rem;
+    }
+}

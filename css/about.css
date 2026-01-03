@@ -1,0 +1,665 @@
+/* ========================================
+   About Dr. Karim Page Styles
+   ======================================== */
+
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--white);
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Biography Detailed Section */
+.biography-detailed {
+    padding: var(--section-padding);
+    position: relative;
+    overflow: hidden;
+    background: var(--white);
+}
+
+/* Biography Background Video Container */
+.biography-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.biography-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* Video Overlay for better text readability */
+.biography-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+/* Biography Content Wrapper */
+.biography-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.biography-content-detailed {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.biography-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Biography with Image Layout */
+.biography-with-image {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.biography-image-container {
+    flex: 0 0 350px;
+    position: sticky;
+    top: 120px;
+}
+
+.biography-photo {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.biography-photo:hover {
+    transform: translateY(-5px);
+}
+
+.biography-photo-heritage {
+    max-height: 360px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.biography-main {
+    flex: 1;
+}
+
+.biography-main h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.biography-main h3:first-child {
+    margin-top: 0;
+}
+
+.biography-main p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.biography-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.biography-list li {
+    padding: 0.75rem 0 0.75rem 2.5rem;
+    color: var(--text-light);
+    position: relative;
+    line-height: 1.6;
+}
+
+.biography-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Education & Experience Ribbon Section */
+.education-experience {
+    padding: var(--section-padding);
+    background: var(--lighter-bg);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Education Section Background Video */
+.education-experience .section-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Video Overlay for Education Section */
+.education-experience .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.container-full {
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.container-full .section-title,
+.container-full .title-underline,
+.container-full .section-intro {
+    text-align: center;
+}
+
+.container-full .title-underline {
+    margin: 0 auto 2rem;
+}
+
+/* Education Section Tagline - Match Biography Lead Text Style */
+.education-tagline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Recognition Section Tagline - Same Style */
+.recognition-tagline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Honors Section Tagline - Same Style */
+.honors-tagline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.ribbon-container {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 3rem 0;
+    padding: 2rem 0;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--lighter-bg);
+    scroll-behavior: smooth;
+}
+
+.ribbon-container:active {
+    cursor: grabbing;
+}
+
+/* Custom scrollbar for webkit browsers */
+.ribbon-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.ribbon-container::-webkit-scrollbar-track {
+    background: var(--lighter-bg);
+    border-radius: 10px;
+}
+
+.ribbon-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.ribbon-container::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+.ribbon-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+}
+
+/* Pause auto-scroll when hovering or dragging */
+.ribbon-container.paused {
+    scroll-behavior: auto;
+}
+
+.ribbon-item {
+    flex-shrink: 0;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    min-width: 400px;
+    max-width: 400px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background logo with opacity */
+.ribbon-item::before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: var(--bg-logo, none);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.12;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* University of Toledo logo - same size as others, tucked in corner */
+.ribbon-item[data-institution="university-of-toledo"]::before {
+    width: 120px;
+    height: 120px;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Ensure content is above background */
+.ribbon-item > * {
+    position: relative;
+    z-index: 1;
+}
+
+.ribbon-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.ribbon-item-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background: var(--light-bg);
+    padding: 1rem;
+}
+
+.ribbon-item h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.ribbon-item h4 {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.ribbon-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* Department text - italics, not bold */
+.ribbon-item .ribbon-department {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.ribbon-item .ribbon-department em {
+    font-style: italic;
+}
+
+/* Presentation type badge */
+.presentation-type {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Location text - normal, not bold or italic */
+.ribbon-item .ribbon-location {
+    font-style: normal;
+    font-weight: normal;
+    color: var(--text-lighter);
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+}
+
+.ribbon-item-date {
+    color: var(--text-lighter);
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Honor images container - displayed at bottom of honor boxes */
+.honor-images {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.honor-image {
+    flex: 1;
+    min-width: 150px;
+    max-width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    object-fit: contain;
+    background: white;
+    padding: 1rem;
+}
+
+.honor-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Recognition list within ribbon items */
+.recognition-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.recognition-list li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: var(--text-light);
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.recognition-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* International Recognition Section */
+.recognition-detailed {
+    padding: var(--section-padding);
+    background: var(--lighter-bg);
+    overflow: hidden;
+    position: relative;
+}
+
+/* National Presentations Video Background */
+.national-presentations-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.national-presentations-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.national-presentations-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.92);
+    z-index: 1;
+}
+
+.recognition-grid-detailed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.recognition-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.recognition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.recognition-card h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.recognition-card h4 {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.recognition-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.recognition-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.recognition-card ul li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: var(--text-light);
+    position: relative;
+    line-height: 1.5;
+}
+
+.recognition-card ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Honors Section */
+.honors {
+    padding: var(--section-padding);
+    background: var(--lighter-bg);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Honors Background Video Container */
+.honors-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.honors-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* Video Overlay for better text readability */
+.honors-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+/* Ensure content is above video */
+.honors .container-full {
+    position: relative;
+    z-index: 2;
+}
+
+.recognition-detailed .container-full {
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .biography-main h3 {
+        font-size: 1.5rem;
+    }
+
+    .biography-with-image {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .biography-image-container {
+        flex: 0 0 auto;
+        max-width: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+    }
+
+    .ribbon-item {
+        min-width: 320px;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .biography-main h3 {
+        font-size: 1.3rem;
+    }
+
+    .ribbon-item {
+        min-width: 280px;
+        max-width: 280px;
+        padding: 1.5rem;
+    }
+
+    .ribbon-item-image {
+        height: 200px;
+    }
+
+    .recognition-grid-detailed {
+        grid-template-columns: 1fr;
+    }
+}
