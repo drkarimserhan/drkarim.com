@@ -519,12 +519,12 @@ p {
 
 .hero-tagline {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    opacity: 0.9;
     color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-name {
@@ -907,7 +907,6 @@ p {
     align-items: center;
     min-height: 380px;
     justify-content: space-between;
-
 }
 
 .expertise-card:hover {
@@ -2336,6 +2335,7 @@ p {
         min-height: 360px;
     }
 }
+
 @media (max-width: 640px) {
     .logo-image {
         width: 45px;
@@ -2407,7 +2407,7 @@ p {
         grid-template-columns: 1fr;
     }
 
-        .expertise-grid {
+    .expertise-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -2424,7 +2424,6 @@ p {
     .expertise-card p {
         font-size: 0.9rem;
     }
-
 
     .testimonial-card {
         min-width: 320px;
