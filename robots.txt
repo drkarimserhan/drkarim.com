@@ -1,0 +1,28 @@
+# Robots.txt for drkarim.com
+# Dr. Karim SERHAN - Consultant General and Minimally Invasive Surgery
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://drkarim.com/sitemap.xml
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Disallow access to certain files (optional)
+Disallow: /temp/
+Disallow: *.pdf$
+
+# Crawl-delay (optional - can help with server load)
+# Crawl-delay: 1
