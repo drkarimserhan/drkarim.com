@@ -901,6 +901,10 @@ p {
     border-radius: 15px;
     transition: var(--transition);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 280px;
 }
 
 .expertise-card:hover {
@@ -936,12 +940,16 @@ p {
     font-size: 1.2rem;
     color: var(--text-dark);
     margin-bottom: 0.75rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .expertise-card p {
     color: var(--text-light);
     font-size: 0.95rem;
     margin: 0;
+
 }
 
 .expertise-card-link {
@@ -2309,6 +2317,17 @@ p {
     }
 }
 
+/* Tablet and Medium Screens */
+@media (max-width: 1024px) {
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .expertise-card {
+        min-height: 260px;
+    }
+}
 @media (max-width: 640px) {
     .logo-image {
         width: 45px;
@@ -2380,9 +2399,24 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .expertise-grid {
+        .expertise-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
+    
+    .expertise-card {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+    
+    .expertise-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .expertise-card p {
+        font-size: 0.9rem;
+    }
+
 
     .testimonial-card {
         min-width: 320px;
