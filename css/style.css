@@ -317,7 +317,7 @@ p {
 .dropdown-submenu {
     position: absolute;
     top: 0;
-    left: 100%;
+    right: 100%;
     background: var(--white);
     box-shadow: var(--shadow-lg);
     border-radius: 8px;
@@ -325,10 +325,10 @@ p {
     min-width: 200px;
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-10px);
+    transform: translateX(10px);
     transition: all 0.3s ease;
     z-index: 1001;
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .nav-dropdown-nested:hover .dropdown-submenu {
