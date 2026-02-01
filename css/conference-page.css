@@ -229,6 +229,12 @@
     margin: 3rem auto 0;
 }
 
+/* Gallery with large number of images - 4 columns */
+.conference-gallery-large {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
 /* Gallery with 5 images - 3 on top, 2 on bottom */
 .conference-gallery-five {
     grid-template-columns: repeat(3, 1fr);
@@ -357,6 +363,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .conference-gallery-large {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     .conference-gallery-five {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -406,6 +416,11 @@
     
     .conference-gallery-two {
         grid-template-columns: 1fr;
+    }
+    
+    .conference-gallery-large {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     
     .conference-gallery-five {
@@ -572,6 +587,24 @@ body:has(.page-header-pink) .modal-nav:hover {
     background: rgba(236, 72, 153, 1);
 }
 
+/* Blue theme modal buttons */
+body:has(.page-header-blue) .modal-nav {
+    background: rgba(59, 130, 246, 0.85);
+}
+
+body:has(.page-header-blue) .modal-nav:hover {
+    background: rgba(59, 130, 246, 1);
+}
+
+/* Cream theme modal buttons */
+body:has(.page-header-cream) .modal-nav {
+    background: rgba(180, 83, 9, 0.85);
+}
+
+body:has(.page-header-cream) .modal-nav:hover {
+    background: rgba(180, 83, 9, 1);
+}
+
 .modal-prev {
     left: 20px;
 }
@@ -626,6 +659,16 @@ body:has(.page-header-pink) .modal-nav:hover {
     background: linear-gradient(135deg, rgba(251, 207, 232, 0.95), rgba(244, 143, 177, 0.95)) !important;
 }
 
+/* Page Header Blue Theme for Multi-Disciplinary Breast Conference */
+.page-header-blue {
+    background: linear-gradient(135deg, rgba(191, 219, 254, 0.95), rgba(147, 197, 253, 0.95)) !important;
+}
+
+/* Page Header Cream Theme for Best of San Antonio Breast Symposium */
+.page-header-cream {
+    background: linear-gradient(135deg, rgba(254, 252, 243, 0.98), rgba(250, 240, 220, 0.98)) !important;
+}
+
 .page-header-no-video .page-header-container {
     text-align: center;
     display: flex;
@@ -665,6 +708,20 @@ body:has(.page-header-pink) .modal-nav:hover {
     color: #db2777;
     box-shadow: 0 8px 25px rgba(219, 39, 119, 0.2);
     border: 2px solid rgba(251, 207, 232, 0.4);
+}
+
+/* Blue theme title styling */
+.page-header-blue .page-title {
+    color: #1d4ed8;
+    box-shadow: 0 8px 25px rgba(29, 78, 216, 0.2);
+    border: 2px solid rgba(191, 219, 254, 0.4);
+}
+
+/* Cream theme title styling */
+.page-header-cream .page-title {
+    color: #92400e;
+    box-shadow: 0 8px 25px rgba(146, 64, 14, 0.15);
+    border: 2px solid rgba(217, 119, 6, 0.2);
 }
 
 /* Responsive Modal */
