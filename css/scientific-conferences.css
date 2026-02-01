@@ -50,6 +50,19 @@
     background: linear-gradient(135deg, #d81b60, #f48fb1);
 }
 
+/* Yellow Theme for Dubai Hernia Summit */
+.conference-card-yellow {
+    background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+}
+
+.conference-card-yellow:hover {
+    border-color: #fcd34d;
+}
+
+.conference-card-yellow .conference-icon {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
 /* Conference Icon */
 .conference-icon {
     width: 70px;

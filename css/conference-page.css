@@ -1,0 +1,637 @@
+/* ========================================
+   Conference Page Styles
+   ======================================== */
+
+/* Conference Hero Section */
+.conference-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 120px 20px 80px;
+}
+
+.conference-hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.conference-hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.conference-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.85), rgba(14, 116, 144, 0.85));
+    z-index: 1;
+}
+
+/* Light Violet Overlay for OASI Conference */
+.conference-hero-overlay-violet {
+    background: linear-gradient(135deg, rgba(186, 152, 217, 0.85), rgba(216, 191, 235, 0.85)) !important;
+}
+
+.conference-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.conference-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.conference-badge i {
+    font-size: 1.1rem;
+}
+
+.conference-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.conference-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Conference Info Section */
+.conference-info-section {
+    padding: 60px 0;
+    background: var(--lighter-bg);
+}
+
+.conference-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conference-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+/* Program Section */
+.program-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.program-download-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.program-download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.program-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.program-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.program-details {
+    flex: 1;
+    color: white;
+}
+
+.program-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.program-details p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.btn-download {
+    background: white;
+    color: var(--primary-color);
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-download:hover {
+    background: var(--lighter-bg);
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 60px 0;
+    background: var(--lighter-bg);
+}
+
+.conference-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Gallery with 3 images in a row */
+.conference-gallery-three {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Gallery with 5 images - 3 on top, 2 on bottom */
+.conference-gallery-five {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.conference-gallery-five .gallery-item:nth-child(4),
+.conference-gallery-five .gallery-item:nth-child(5) {
+    grid-column: span 1;
+}
+
+.conference-gallery-five .gallery-item:nth-child(4) {
+    grid-column: 1 / 2;
+}
+
+.conference-gallery-five .gallery-item:nth-child(5) {
+    grid-column: 3 / 4;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    background: white;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    padding: 1.5rem;
+    background: white;
+}
+
+.gallery-caption p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Topics Section */
+.topics-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.topic-card {
+    background: var(--lighter-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.topic-card:hover {
+    transform: translateY(-8px);
+    background: white;
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.topic-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.topic-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.topic-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.topic-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .conference-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .conference-gallery-three {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .conference-gallery-five {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .conference-gallery-five .gallery-item:nth-child(4),
+    .conference-gallery-five .gallery-item:nth-child(5) {
+        grid-column: span 1;
+    }
+    
+    .topics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .conference-hero {
+        min-height: 60vh;
+        padding: 100px 20px 60px;
+    }
+    
+    .conference-main-title {
+        font-size: 2rem;
+    }
+    
+    .conference-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .program-download-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .conference-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .conference-gallery-three {
+        grid-template-columns: 1fr;
+    }
+    
+    .conference-gallery-five {
+        grid-template-columns: 1fr;
+    }
+    
+    .conference-gallery-five .gallery-item:nth-child(4),
+    .conference-gallery-five .gallery-item:nth-child(5) {
+        grid-column: span 1;
+    }
+    
+    .topics-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* OASI Conference Title Responsive */
+    .page-header-no-video .page-title {
+        font-size: 1.75rem;
+        padding: 1rem 1.5rem;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .conference-main-title {
+        font-size: 1.75rem;
+    }
+    
+    .conference-subtitle {
+        font-size: 1rem;
+    }
+    
+    .program-download-card {
+        padding: 1.5rem;
+    }
+    
+    .program-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .program-icon i {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    /* OASI Conference Title Mobile */
+    .page-header-no-video .page-title {
+        font-size: 1.5rem;
+        padding: 0.875rem 1.25rem;
+        line-height: 1.3;
+    }
+}
+
+/* Image Modal Styles */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.image-modal.active {
+    display: block;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    animation: zoom 0.3s;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    cursor: zoom-in;
+}
+
+.modal-content.zoomed {
+    cursor: zoom-out;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: var(--primary-color);
+}
+
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 20px 0;
+    font-size: 1.1rem;
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(186, 152, 217, 0.8);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: var(--transition);
+    z-index: 10000;
+}
+
+.modal-nav:hover {
+    background: rgba(186, 152, 217, 1);
+}
+
+/* Yellow theme modal buttons */
+body:has(.page-header-yellow) .modal-nav {
+    background: rgba(251, 191, 36, 0.85);
+}
+
+body:has(.page-header-yellow) .modal-nav:hover {
+    background: rgba(251, 191, 36, 1);
+}
+
+.modal-prev {
+    left: 20px;
+}
+
+.modal-next {
+    right: 20px;
+}
+
+/* Cursor pointer for clickable gallery items */
+.gallery-item {
+    cursor: pointer;
+}
+
+/* Page Header without Video - Light Violet Background */
+.page-header-no-video {
+    background: linear-gradient(135deg, rgba(186, 152, 217, 0.95), rgba(216, 191, 235, 0.95)) !important;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page Header Yellow Theme for Dubai Hernia Summit */
+.page-header-yellow {
+    background: linear-gradient(135deg, rgba(254, 243, 199, 0.95), rgba(253, 230, 138, 0.95)) !important;
+}
+
+.page-header-no-video .page-header-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header-no-video .back-link {
+    margin-bottom: 2rem;
+}
+
+.page-header-no-video .page-title {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.98);
+    color: #6b46c1;
+    padding: 1.2rem 2.5rem;
+    border-radius: 12px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(107, 70, 193, 0.25);
+    border: 2px solid rgba(186, 152, 217, 0.3);
+    max-width: 900px;
+    line-height: 1.4;
+}
+
+/* Yellow theme title styling */
+.page-header-yellow .page-title {
+    color: #d97706;
+    box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
+    border: 2px solid rgba(253, 230, 138, 0.4);
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95%;
+    }
+    
+    .modal-nav {
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .modal-prev {
+        left: 10px;
+    }
+    
+    .modal-next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-close {
+        font-size: 35px;
+        right: 20px;
+        top: 10px;
+    }
+}
+
