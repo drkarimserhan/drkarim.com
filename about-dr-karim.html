@@ -95,7 +95,14 @@
 
     <!-- Page Hero -->
     <section class="page-hero">
-        <div class="container">
+        <!-- Background Video -->
+        <div class="page-hero-video-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 0;">
+            <video autoplay muted loop playsinline class="page-hero-video" style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover;">
+                <source src="https://www.genspark.ai/api/files/s/AiyZPnPq" type="video/mp4">
+            </video>
+            <div class="page-hero-video-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+        </div>
+        <div class="container" style="position: relative; z-index: 2;">
             <h1 class="page-title">About Dr. Karim SERHAN</h1>
             <p class="page-subtitle">Care Philosophy, Biography, Education & Experience</p>
         </div>
@@ -106,7 +113,7 @@
         <!-- Background Video -->
         <div class="philosophy-video-container">
             <video autoplay muted loop playsinline class="philosophy-video">
-                <source src="https://www.genspark.ai/api/files/s/IPxpQwuv" type="video/mp4">
+                <source src="https://www.genspark.ai/api/files/s/wAEdbecz" type="video/mp4">
             </video>
             <div class="philosophy-video-overlay"></div>
         </div>
@@ -143,16 +150,11 @@
     </section>
 
     <!-- Biography Section -->
-    <section class="biography-detailed" id="biography">
-        <!-- Background Video -->
-        <div class="biography-video-container">
-            <video autoplay muted loop playsinline class="biography-video">
-                <source src="https://www.genspark.ai/api/files/s/rS5FQL0h" type="video/mp4">
-            </video>
-            <div class="biography-video-overlay"></div>
-        </div>
+    <section class="biography-detailed" id="biography" style="background-image: url('https://www.genspark.ai/api/files/s/wsaz14dM'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <!-- Background Image Overlay -->
+        <div class="biography-image-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.92); z-index: 1;"></div>
         
-        <div class="container biography-content-wrapper">
+        <div class="container biography-content-wrapper" style="position: relative; z-index: 2;">
             <h2 class="section-title">Biography</h2>
             <div class="title-underline"></div>
             
@@ -185,7 +187,7 @@
     <section class="education-experience" id="education-experience">
         <!-- Background Video -->
         <video class="section-video-bg" autoplay muted loop playsinline webkit-playsinline>
-            <source src="https://www.genspark.ai/api/files/s/ESgn0reC" type="video/mp4">
+            <source src="https://www.genspark.ai/api/files/s/Mfa0UXNK" type="video/mp4">
         </video>
         <div class="video-overlay"></div>
         
