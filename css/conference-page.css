@@ -221,6 +221,14 @@
     gap: 2rem;
 }
 
+/* Gallery with 2 images in a row */
+.conference-gallery-two {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
 /* Gallery with 5 images - 3 on top, 2 on bottom */
 .conference-gallery-five {
     grid-template-columns: repeat(3, 1fr);
@@ -345,6 +353,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .conference-gallery-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .conference-gallery-five {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -389,6 +401,10 @@
     }
     
     .conference-gallery-three {
+        grid-template-columns: 1fr;
+    }
+    
+    .conference-gallery-two {
         grid-template-columns: 1fr;
     }
     
@@ -547,6 +563,15 @@ body:has(.page-header-yellow) .modal-nav:hover {
     background: rgba(251, 191, 36, 1);
 }
 
+/* Pink theme modal buttons */
+body:has(.page-header-pink) .modal-nav {
+    background: rgba(236, 72, 153, 0.85);
+}
+
+body:has(.page-header-pink) .modal-nav:hover {
+    background: rgba(236, 72, 153, 1);
+}
+
 .modal-prev {
     left: 20px;
 }
@@ -558,6 +583,28 @@ body:has(.page-header-yellow) .modal-nav:hover {
 /* Cursor pointer for clickable gallery items */
 .gallery-item {
     cursor: pointer;
+}
+
+/* Back Link Styling - Consistent across all conference pages */
+.page-header .back-link,
+.page-header-no-video .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.page-header .back-link:hover,
+.page-header-no-video .back-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-5px);
 }
 
 /* Page Header without Video - Light Violet Background */
@@ -574,16 +621,17 @@ body:has(.page-header-yellow) .modal-nav:hover {
     background: linear-gradient(135deg, rgba(254, 243, 199, 0.95), rgba(253, 230, 138, 0.95)) !important;
 }
 
+/* Page Header Pink Theme for Oxford Breast Surgery Course */
+.page-header-pink {
+    background: linear-gradient(135deg, rgba(251, 207, 232, 0.95), rgba(244, 143, 177, 0.95)) !important;
+}
+
 .page-header-no-video .page-header-container {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.page-header-no-video .back-link {
-    margin-bottom: 2rem;
 }
 
 .page-header-no-video .page-title {
@@ -605,6 +653,18 @@ body:has(.page-header-yellow) .modal-nav:hover {
     color: #d97706;
     box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
     border: 2px solid rgba(253, 230, 138, 0.4);
+}
+
+/* Yellow theme back button - black text */
+.page-header-yellow .back-link {
+    color: #000000;
+}
+
+/* Pink theme title styling */
+.page-header-pink .page-title {
+    color: #db2777;
+    box-shadow: 0 8px 25px rgba(219, 39, 119, 0.2);
+    border: 2px solid rgba(251, 207, 232, 0.4);
 }
 
 /* Responsive Modal */
