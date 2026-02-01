@@ -703,6 +703,16 @@ body:has(.page-header-cream) .modal-nav:hover {
     color: #000000;
 }
 
+/* Blue theme back button - black text */
+.page-header-blue .back-link {
+    color: #000000;
+}
+
+/* Cream theme back button - black text */
+.page-header-cream .back-link {
+    color: #000000;
+}
+
 /* Pink theme title styling */
 .page-header-pink .page-title {
     color: #db2777;

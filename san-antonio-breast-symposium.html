@@ -5,47 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best of San Antonio Breast Cancer Symposium - Dr. Karim SERHAN</title>
     <meta name="description" content="Best of San Antonio Breast Cancer Symposium - UAE 2023 - Dr. Karim Serhan's participation and presentations">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/conference-page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Floating Decorative Elements -->
+    <div class="floating-decorations">
+        <div class="floating-sun">
+            <div class="sun-icon"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <img src="https://www.genspark.ai/api/files/s/kyAfaemx" alt="Dr. Karim SERHAN" class="logo-img">
-                </a>
-                
-                <div class="nav-menu" id="navMenu">
-                    <button class="close-menu" id="closeMenu">
-                        <i class="fas fa-times"></i>
-                    </button>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="https://www.genspark.ai/api/files/s/kyAfaemx" alt="Dr. Karim SERHAN" class="logo-image">
+                        <div class="logo-text">
+                            <h1>Dr. Karim SERHAN</h1>
+                            <p class="subtitle">Consultant General and<br>Minimally Invasive Surgery</p>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav" id="navbar">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="about-dr-karim.html" class="nav-link">About Dr. Karim</a></li>
-                        <li class="nav-item nav-dropdown">
-                            <a href="#" class="nav-link">Expertise <i class="fas fa-chevron-down"></i></a>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-dropdown">
+                            <a href="about-dr-karim.html" class="nav-link">About Dr. Karim <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="thyroid-surgery.html">Thyroid Surgery</a></li>
-                                <li><a href="breast-cancer-surgery.html">Breast Cancer Surgery</a></li>
+                                <li><a href="about-dr-karim.html#care-philosophy">Care Philosophy</a></li>
+                                <li><a href="about-dr-karim.html#biography">Biography</a></li>
+                                <li><a href="about-dr-karim.html#education-experience">Education & Experience</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item nav-dropdown">
-                            <a href="#" class="nav-link">Academic <i class="fas fa-chevron-down"></i></a>
+                        <li><a href="index.html#expertise" class="nav-link nav-link-multiline"><span class="nav-line-1">Expertise /</span><br><span class="nav-line-2">Scope of Service</span></a></li>
+                        <li><a href="index.html#testimonials" class="nav-link">Patient Testimonials</a></li>
+                        <li class="nav-dropdown">
+                            <a href="academic-achievements.html" class="nav-link">Academic Achievements <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="academic-achievements.html">Academic Achievements</a></li>
                                 <li class="nav-dropdown-nested">
-                                    <a href="#">Publications <i class="fas fa-chevron-right"></i></a>
+                                    <a href="academic-achievements.html#scientific-publications">Scientific Publications <i class="fas fa-chevron-right"></i></a>
                                     <ul class="dropdown-submenu">
                                         <li><a href="research-articles.html">Research Articles</a></li>
                                         <li><a href="book-chapters.html">Book Chapters</a></li>
                                         <li><a href="peer-reviewed-abstracts.html">Peer-Reviewed Abstracts</a></li>
+                                        <li><a href="editorial-roles.html">Editorial Roles</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="editorial-roles.html">Editorial Roles</a></li>
+                                <li><a href="academic-achievements.html#patents">Innovative Patents</a></li>
+                                <li><a href="academic-achievements.html#research-grants">Research Grants</a></li>
+                                <li><a href="academic-achievements.html#honors">Honors & Awards</a></li>
+                                <li><a href="academic-achievements.html#national-presentations">National Presentations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a href="index.html#news" class="nav-link">News <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="thyroid-surgery.html">Thyroid Surgery</a></li>
+                                <li><a href="breast-cancer-surgery.html">Breast Surgery</a></li>
+                                <li><a href="podcasts-interviews.html">Podcasts & Interviews</a></li>
+                                <li><a href="surgery-residents-videos.html">Videos for Surgery Trainees</a></li>
                                 <li class="nav-dropdown-nested">
                                     <a href="scientific-conferences.html">Conferences <i class="fas fa-chevron-right"></i></a>
                                     <ul class="dropdown-submenu">
@@ -58,39 +87,27 @@
                                         <li><a href="san-antonio-breast-symposium.html">Best of San Antonio Breast Symposium</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="podcasts-interviews.html">Podcasts & Interviews</a></li>
-                                <li><a href="surgery-residents-videos.html">Surgery & Residents Videos</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="https://booking.drkarim.com/" class="nav-link nav-cta" target="_blank">
-                                Book Appointment
-                            </a>
-                        </li>
+                        <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
                     </ul>
-                </div>
-                
-                <button class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header with Gradient (No Video) -->
-    <header class="page-header-no-video page-header-cream">
-        <div class="page-header-container">
+    <!-- Page Header -->
+    <section class="page-header page-header-no-video page-header-cream">
+        <div class="container page-header-container">
             <a href="scientific-conferences.html" class="back-link">
                 <i class="fas fa-arrow-left"></i> Back to Scientific Conferences
             </a>
-            <div class="page-header-content">
-                <h1 class="page-title">Best of San Antonio Breast Cancer Symposium</h1>
-                <p class="page-subtitle">UAE 2023 - Hyatt Regency Creek Heights, Dubai</p>
-            </div>
+            <h1 class="page-title">Best of San Antonio Breast Cancer Symposium</h1>
         </div>
-    </header>
+    </section>
 
     <!-- Conference Gallery Section -->
     <section class="gallery-section">
@@ -230,25 +247,162 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-dr-karim.html">About Dr. Karim</a></li>
+                        <li><a href="index.html#expertise">Expertise</a></li>
                         <li><a href="thyroid-surgery.html">Thyroid Surgery</a></li>
                         <li><a href="breast-cancer-surgery.html">Breast Surgery</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Get in Touch</h4>
-                    <p>For appointments and inquiries:</p>
-                    <a href="https://www.instagram.com/karim.serhan.md/" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i> DM via Instagram
-                    </a>
+                    <h4>Contact Information</h4>
+                    <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/karim.serhan.md/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Direct message me on Instagram @karim.serhan.md</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Dr. Karim Serhan. All rights reserved.</p>
+                <p>&copy; 2025 Dr. Karim SERHAN. All rights reserved.</p>
+                <p class="footer-note">This website is for educational purposes only and does not constitute medical advice.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Book Appointment Button -->
+    <a href="https://booking.drkarim.com/" target="_blank" rel="noopener" class="book-appointment-btn">
+        <i class="fas fa-calendar-check"></i>
+        <span>Book Your Appointment</span>
+    </a>
+
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
-    <script src="js/conference.js"></script>
+    
+    <!-- Gallery Modal Script -->
+    <script>
+        // Gallery Modal Functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalCaption = document.getElementById('modalCaption');
+        const closeBtn = document.getElementById('modalClose');
+        const prevBtn = document.getElementById('modalPrev');
+        const nextBtn = document.getElementById('modalNext');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let currentIndex = 0;
+        let currentZoom = 1;
+        let isDragging = false;
+        let startX, startY, translateX = 0, translateY = 0;
+
+        // Open modal
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                currentIndex = index;
+                updateModalImage();
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+            resetZoom();
+        }
+
+        // Navigation
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            updateModalImage();
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            updateModalImage();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.style.display === 'flex') {
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowLeft') prevBtn.click();
+                if (e.key === 'ArrowRight') nextBtn.click();
+            }
+        });
+
+        function updateModalImage() {
+            const item = galleryItems[currentIndex];
+            modalImg.src = item.dataset.image;
+            modalCaption.textContent = item.dataset.caption;
+            resetZoom();
+        }
+
+        // Zoom functionality
+        modalImg.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const delta = e.deltaY * -0.01;
+            currentZoom = Math.min(Math.max(1, currentZoom + delta), 3);
+            applyZoom();
+        });
+
+        // Click to toggle zoom
+        modalImg.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentZoom = currentZoom === 1 ? 2 : 1;
+            applyZoom();
+        });
+
+        // Pan functionality
+        modalImg.addEventListener('mousedown', startDrag);
+        modalImg.addEventListener('mousemove', drag);
+        modalImg.addEventListener('mouseup', endDrag);
+        modalImg.addEventListener('mouseleave', endDrag);
+
+        function startDrag(e) {
+            if (currentZoom > 1) {
+                isDragging = true;
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                modalImg.style.cursor = 'grabbing';
+                e.preventDefault();
+            }
+        }
+
+        function drag(e) {
+            if (isDragging && currentZoom > 1) {
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                applyZoom();
+                e.preventDefault();
+            }
+        }
+
+        function endDrag() {
+            isDragging = false;
+            if (currentZoom > 1) {
+                modalImg.style.cursor = 'grab';
+            }
+        }
+
+        function applyZoom() {
+            modalImg.style.transform = `scale(${currentZoom}) translate(${translateX / currentZoom}px, ${translateY / currentZoom}px)`;
+            modalImg.style.cursor = currentZoom > 1 ? 'grab' : 'zoom-in';
+        }
+
+        function resetZoom() {
+            currentZoom = 1;
+            translateX = 0;
+            translateY = 0;
+            applyZoom();
+        }
+    </script>
 </body>
 </html>
