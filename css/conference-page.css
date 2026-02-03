@@ -254,6 +254,10 @@
     grid-column: 3 / 4;
 }
 
+.conference-gallery-five .gallery-item:nth-child(6) {
+    grid-column: 2 / 3;
+}
+
 .gallery-item {
     position: relative;
     overflow: hidden;
